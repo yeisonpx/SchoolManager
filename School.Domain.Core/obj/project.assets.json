@@ -208,9 +208,22 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "School.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/School.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/School.Common.dll": {}
+        }
+      },
       "School.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "School.Common": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/School.Domain.dll": {}
         },
@@ -689,6 +702,11 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "School.Common/1.0.0": {
+      "type": "project",
+      "path": "../School.Common/School.Common.csproj",
+      "msbuildProject": "../School.Common/School.Common.csproj"
     },
     "School.Domain/1.0.0": {
       "type": "project",

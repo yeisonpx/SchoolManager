@@ -4438,6 +4438,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "School.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/School.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/School.Common.dll": {}
+        }
+      },
+      "School.Service.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "School.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/School.Service.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/School.Service.Core.dll": {}
+        }
       }
     }
   },
@@ -12062,13 +12085,25 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "School.Common/1.0.0": {
+      "type": "project",
+      "path": "../School.Common/School.Common.csproj",
+      "msbuildProject": "../School.Common/School.Common.csproj"
+    },
+    "School.Service.Core/1.0.0": {
+      "type": "project",
+      "path": "../School.Service.Core/School.Service.Core.csproj",
+      "msbuildProject": "../School.Service.Core/School.Service.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "School.Common >= 1.0.0",
+      "School.Service.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12098,7 +12133,14 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Common/School.Common.csproj": {
+              "projectPath": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Common/School.Common.csproj"
+            },
+            "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Service.Core/School.Service.Core.csproj": {
+              "projectPath": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Service.Core/School.Service.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

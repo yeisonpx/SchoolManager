@@ -1,19 +1,14 @@
-﻿<Properties StartupConfiguration="{8F5C0D08-0352-4E11-998F-AFEAA63F563B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="School.Service.Core/ITeacherService.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{8F5C0D08-0352-4E11-998F-AFEAA63F563B}|Default">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="School.Domain/Section.cs" Line="14" Column="2" />
-      <File FileName="School.Web.API/Controllers/SchoolController.cs" Line="26" Column="51" />
-      <File FileName="School.Service.Core/ISchoolService.cs" Line="14" Column="17" />
-      <File FileName="School.Service.Core/ISectionService.cs" Line="15" Column="39" />
-      <File FileName="School.Service.Core/ISignatureService.cs" Line="16" Column="40" />
-      <File FileName="School.Service.Core/ITeacherService.cs" Line="14" Column="38" />
+      <File FileName="School.Services/SchoolService.cs" Line="17" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SchoolManager" expanded="True">
-            <Node name="School.Service.Core" expanded="True">
-              <Node name="ITeacherService.cs" selected="True" />
+            <Node name="School.Services" expanded="True">
+              <Node name="SchoolService.cs" selected="True" />
             </Node>
             <Node name="School.Web.API" expanded="True">
               <Node name="Controllers" expanded="True" />
@@ -24,6 +19,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.School.Services FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.School.Web.API FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

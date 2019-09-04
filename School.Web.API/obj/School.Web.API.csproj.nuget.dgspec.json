@@ -4,6 +4,110 @@
     "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Web.API/School.Web.API.csproj": {}
   },
   "projects": {
+    "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Common/School.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Common/School.Common.csproj",
+        "projectName": "School.Common",
+        "projectPath": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Common/School.Common.csproj",
+        "packagesPath": "/Users/yeisonangomas/.nuget/packages/",
+        "outputPath": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Common/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/yeisonangomas/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Service.Core/School.Service.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Service.Core/School.Service.Core.csproj",
+        "projectName": "School.Service.Core",
+        "projectPath": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Service.Core/School.Service.Core.csproj",
+        "packagesPath": "/Users/yeisonangomas/.nuget/packages/",
+        "outputPath": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Service.Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/yeisonangomas/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Common/School.Common.csproj": {
+                "projectPath": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Common/School.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Web.API/School.Web.API.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +131,14 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Common/School.Common.csproj": {
+                "projectPath": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Common/School.Common.csproj"
+              },
+              "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Service.Core/School.Service.Core.csproj": {
+                "projectPath": "/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Service.Core/School.Service.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
