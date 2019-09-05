@@ -46,8 +46,8 @@ namespace School.Repositories.SqlServer
 
         public async Task UpdateAsync(TEntity updatedObject)
         {
-            await _db.Set<TEntity>()
-                     .AddAsync(updatedObject);
+            _db.Set<TEntity>()
+                     .Update(updatedObject);
             await _db.SaveChangesAsync();
         }
     }

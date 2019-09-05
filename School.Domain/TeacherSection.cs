@@ -1,9 +1,8 @@
 ﻿using System;
 namespace School.Domain
 {
-    public class TeacherSection
+    public class TeacherSection : Entity
     {
-        public Guid Id { get; set; }
         public Guid TeacherId { get; set; }
         public Teacher Teacher { get; set; }
         public Guid SectionId { get; set; }

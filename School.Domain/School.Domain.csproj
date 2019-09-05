@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Compile Remove="Class1.cs" />
+    <Compile Remove="TeacherStatus.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\School.Common\School.Common.csproj" />

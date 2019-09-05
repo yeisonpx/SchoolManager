@@ -1,7 +1,7 @@
 ﻿using System;
 namespace School.Domain
 {
-    public class SchoolSignature
+    public class SchoolSignature: Entity
     {
         public Guid SchoolId { get; set; }
         public School School { get; set; }
