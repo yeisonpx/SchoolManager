@@ -1,6 +1,7 @@
 ﻿namespace School.Domain
 {
-    public class TeacherStatus
+    public class TeacherStatus: Entity
     {
+
     }
 }

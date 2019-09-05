@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using School.Common.Enums;
 
 namespace School.Domain
 {
