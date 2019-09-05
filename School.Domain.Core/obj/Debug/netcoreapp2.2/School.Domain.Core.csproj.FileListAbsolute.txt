@@ -1,8 +1,8 @@
 /Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Domain.Core/bin/Debug/netcoreapp2.2/School.Domain.Core.deps.json
 /Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Domain.Core/bin/Debug/netcoreapp2.2/School.Domain.Core.dll
 /Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Domain.Core/bin/Debug/netcoreapp2.2/School.Domain.Core.pdb
-/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Domain.Core/bin/Debug/netcoreapp2.2/School.Domain.dll
 /Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Domain.Core/bin/Debug/netcoreapp2.2/School.Common.dll
+/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Domain.Core/bin/Debug/netcoreapp2.2/School.Domain.dll
 /Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Domain.Core/bin/Debug/netcoreapp2.2/School.Domain.pdb
 /Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Domain.Core/bin/Debug/netcoreapp2.2/School.Common.pdb
 /Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Domain.Core/obj/Debug/netcoreapp2.2/School.Domain.Core.csprojAssemblyReference.cache

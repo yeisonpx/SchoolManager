@@ -9,7 +9,7 @@ using School.Service.Core.DTO.School.Teacher;
 
 namespace Teacher.Web.API.Controllers
 {
-    [Route("api/v1/schoolds/teachers")]
+    [Route("api/v1/schools/teachers")]
     [ApiController]
     public class TeacherController : Controller
     {

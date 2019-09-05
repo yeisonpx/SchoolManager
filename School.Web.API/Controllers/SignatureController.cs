@@ -9,7 +9,7 @@ using School.Service.Core.DTO.School.Signature;
 
 namespace Signature.Web.API.Controllers
 {
-    [Route("api/v1/schoolds/signatures")]
+    [Route("api/v1/schools/signatures")]
     [ApiController]
     public class SignatureController : Controller
     {
@@ -23,10 +23,10 @@ namespace Signature.Web.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<SignatureDTO>>> Get()
         {
-            var Signatures= await _signatureService.GetAllAsync();
-            if (Signatures != null)
+            var signatures= await _signatureService.GetAllAsync();
+            if (signatures != null)
             {
-                return Ok(Signatures);
+                return Ok(signatures);
             }
             return NoContent();
         }
@@ -35,38 +35,38 @@ namespace Signature.Web.API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<SignatureDTO>> Get(Guid id)
         {
-            var Signatured = await _signatureService.GetAsync(id);
-            if (Signatured != null)
+            var signature = await _signatureService.GetAsync(id);
+            if (signature != null)
             {
-                return Ok(Signatured);
+                return Ok(signature);
             }
             return NotFound();
         }
 
         // POST api/values
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody]CreateSignatureDTO SignatureDTO )
+        public async Task<ActionResult> Post([FromBody]CreateSignatureDTO signatureDTO)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
-            await _signatureService.CreateAsync(SignatureDTO);
+            await _signatureService.CreateAsync(signatureDTO);
             return Ok();
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public async Task<ActionResult> Put([FromBody]UpdateSignatureDTO SignatureDTO)
+        [HttpPut]
+        public async Task<ActionResult> Put([FromBody]UpdateSignatureDTO signatureDTO)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
-            var Signatured = await _signatureService.GetAsync(SignatureDTO.Id);
-            if (Signatured != null)
+            var signature = await _signatureService.GetAsync(signatureDTO.Id);
+            if (signature != null)
             {
-                await _signatureService.UpdateAsync(SignatureDTO);
+                await _signatureService.UpdateAsync(signatureDTO);
                 return NoContent();
             }
             return NotFound();
@@ -80,8 +80,8 @@ namespace Signature.Web.API.Controllers
             {
                 return BadRequest();
             }
-            var Signatured = await _signatureService.GetAsync(id);
-            if (Signatured != null)
+            var signature = await _signatureService.GetAsync(id);
+            if (signature != null)
             {
                 await _signatureService.DeleteAsync(id);
                 return NoContent();

@@ -7,4 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\School.Domain\School.Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="IBaseRepository.cs" />
+  </ItemGroup>
 </Project>

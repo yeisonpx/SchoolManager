@@ -10,7 +10,7 @@ using Section.Service.Core;
 
 namespace Section.Web.API.Controllers
 {
-    [Route("api/v1/schoolds/sections")]
+    [Route("api/v1/schools/sections")]
     [ApiController]
     public class SectionController : Controller
     {
@@ -24,10 +24,10 @@ namespace Section.Web.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<SectionDTO>>> Get()
         {
-            var Sections= await _sectionService.GetAllAsync();
-            if (Sections != null)
+            var sections= await _sectionService.GetAllAsync();
+            if (sections != null)
             {
-                return Ok(Sections);
+                return Ok(sections);
             }
             return NoContent();
         }
@@ -36,38 +36,38 @@ namespace Section.Web.API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<SectionDTO>> Get(Guid id)
         {
-            var Sectiond = await _sectionService.GetAsync(id);
-            if (Sectiond != null)
+            var section = await _sectionService.GetAsync(id);
+            if (section != null)
             {
-                return Ok(Sectiond);
+                return Ok(section);
             }
             return NotFound();
         }
 
         // POST api/values
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody]CreateSectionDTO SectionDTO )
+        public async Task<ActionResult> Post([FromBody]CreateSectionDTO sectionDTO )
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
-            await _sectionService.CreateAsync(SectionDTO);
+            await _sectionService.CreateAsync(sectionDTO);
             return Ok();
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public async Task<ActionResult> Put([FromBody]UpdateSectionDTO SectionDTO)
+        [HttpPut]
+        public async Task<ActionResult> Put([FromBody]UpdateSectionDTO sectionDTO)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
-            var Sectiond = await _sectionService.GetAsync(SectionDTO.Id);
-            if (Sectiond != null)
+            var section = await _sectionService.GetAsync(sectionDTO.Id);
+            if (section != null)
             {
-                await _sectionService.UpdateAsync(SectionDTO);
+                await _sectionService.UpdateAsync(sectionDTO);
                 return NoContent();
             }
             return NotFound();
@@ -81,8 +81,8 @@ namespace Section.Web.API.Controllers
             {
                 return BadRequest();
             }
-            var Sectiond = await _sectionService.GetAsync(id);
-            if (Sectiond != null)
+            var section = await _sectionService.GetAsync(id);
+            if (section != null)
             {
                 await _sectionService.DeleteAsync(id);
                 return NoContent();

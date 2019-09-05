@@ -22,5 +22,9 @@
   <ItemGroup>
     <ProjectReference Include="..\School.Common\School.Common.csproj" />
     <ProjectReference Include="..\School.Service.Core\School.Service.Core.csproj" />
+    <ProjectReference Include="..\School.Domain\School.Domain.csproj" />
+    <ProjectReference Include="..\School.Services\School.Services.csproj" />
+    <ProjectReference Include="..\School.Domain.Core\School.Domain.Core.csproj" />
+    <ProjectReference Include="..\School.Repositories\School.Repositories.csproj" />
   </ItemGroup>
 </Project>
