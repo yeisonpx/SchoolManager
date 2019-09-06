@@ -1,18 +1,35 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{8F5C0D08-0352-4E11-998F-AFEAA63F563B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="School.Repositories/SqlServer/GenericRepository.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="All">
+  <MonoDevelop.Ide.Workbench ActiveDocument="School.Web.Mvc/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="School.Domain/School.cs" Line="1" Column="1" />
-      <File FileName="School.Web.API/Controllers/SchoolController.cs" Line="70" Column="49" />
-      <File FileName="School.Services/SchoolService.cs" Line="56" Column="33" />
-      <File FileName="School.Repositories/SqlServer/GenericRepository.cs" Line="55" Column="1" />
+      <File FileName="School.Web.Mvc/wwwroot/js/modules/school.js" Line="5" Column="19" />
+      <File FileName="School.Web.Mvc/Views/School/Index.cshtml" Line="37" Column="1" />
+      <File FileName="School.Web.API/Startup.cs" Line="60" Column="45" />
+      <File FileName="School.Web.API/Controllers/SchoolController.cs" Line="27" Column="59" />
+      <File FileName="School.Web.API/Properties/launchSettings.json" Line="19" Column="7" />
+      <File FileName="School.Web.Mvc/Properties/launchSettings.json" Line="13" Column="29" />
+      <File FileName="School.Web.Mvc/Views/Shared/_Layout.cshtml" Line="76" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SchoolManager" expanded="True">
-            <Node name="School.Repositories" expanded="True">
-              <Node name="SqlServer" expanded="True">
-                <Node name="GenericRepository.cs" selected="True" />
+            <Node name="School.Web.API" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="School.Web.Mvc" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="School" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True">
+                  <Node name="modules" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -22,9 +39,19 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.School.Web.Mvc PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.School.Web.API PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/yeisonangomas/Desktop/Workspace/Visual Studio/SchoolSchedulesManager/School.Web.Mvc/wwwroot/js/modules/school.js" relfile="School.Web.Mvc/wwwroot/js/modules/school.js" line="26" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="All" Name="All">
+      <Items>
+        <StartupItem ItemId="{8F5C0D08-0352-4E11-998F-AFEAA63F563B}" ItemName="School.Web.API" ConfigurationId="Default" />
+        <StartupItem ItemId="{003D3D10-64CB-4DB1-AD7C-12E2354C7302}" ItemName="School.Web.Mvc" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
 </Properties>

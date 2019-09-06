@@ -52,7 +52,16 @@ namespace School.Web.API
             {
                 opt.AddProfile<School.Services.Automapper.MapperProfile>();
             });
-            services.AddSingleton<IMapper>(d=> mapperConfig.CreateMapper());
+            services.AddSingleton(d=> mapperConfig.CreateMapper());
+            //Just for test Vue Js App should not do it on Production
+            services.AddCors(r =>
+            {
+                r.AddPolicy("AllowAll", policy => {
+                    policy.AllowAnyOrigin();
+                    policy.AllowAnyMethod();
+                    policy.AllowAnyHeader();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,6 +78,7 @@ namespace School.Web.API
             }
 
             app.UseHttpsRedirection();
+            app.UseCors("AllowAll");
             app.UseMvc();
         }
     }

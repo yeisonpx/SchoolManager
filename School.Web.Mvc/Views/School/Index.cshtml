@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@section Scripts{
+    <script src="~/js/modules/school.js"></script>
+}
+<h1>List of Schools</h1>
+
+<button v-on:click="getSchools" class="btn btn-sm btn-success" >Refresh</button>
+<div id="schoolApp">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="school in schools">
+                <td>{{ school.name }}</td>
+                <td>{{ school.description }}</td>
+                <td>{{ school.address }}</td>
+                <td>{{ school.phone }}</td>
+                <td>
+                    <button class="btn btn-sm btn-danger" v-on:click="deleteSchool(school,$event)">Delete</button>
+                    <button class="btn btn-sm btn-warning">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
